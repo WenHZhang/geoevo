@@ -1,8 +1,8 @@
 # GeoEvo
-A software for Geographic Evolutionary Multi-Task Optimization Framework for Automated Hyperparameter Tuning on Spatially Stratified Machine Learning Models (GeoEvo).
+A software for A geographic evolutionary framework with multi-task optimization of automatic hyperparameter tuning for spatially stratified machine learning models (GeoEvo).
 
 ## Introduction
-The rapid growth of spatial data across various fields has made data-driven machine learning (ML) methods increasingly essential for spatial analysis. However, the performance of ML methods heavily depends on hyperparameter tuning (HPT), which becomes particularly challenging when dealing with spatial stratified heterogeneity (SSH). SSH causes significant variability in statistical characteristics across sub-regions, requiring separate local models. Traditional HPT methods either apply uniform hyperparameters or treat each model independently, ignoring spatial associations between adjacent models. To address this gap, we propose a geographic evolutionary multi-task optimization framework (GeoEvo) that leverages spatial associations for collaborative HPT of local ML models under SSH. GeoEvo formulates a multi-task constrained single objective optimization problem to jointly optimize hyperparameters across multiple local models. The framework introduces a geographic proximity differential evolution operator (Geo-DE) to enable collaboration among spatially adjacent models and a geographic selection operator (Geo-SL) to promote hyperparameter sharing, improving resource utilization and accelerating convergence.
+The rapid growth of spatial data across various fields has made data-driven machine learning (ML) methods increasingly essential for spatial analysis. The performance of ML methods heavily depends on hyperparameter tuning (HPT), which becomes particularly challenging when dealing with spatial stratified heterogeneity (SSH) that causes significant variability in statistical characteristics across sub-regions and demands separate local models. Traditional HPT methods either apply uniform hyperparameters or treat each model independently, ignoring spatial associations between adjacent models. To address this gap, we propose a geographic evolutionary (GeoEvo) framework with multi-task optimization to account for spatial associations in collaborative HPT of local ML models under SSH. GeoEvo formulates the problem of a single objective optimization with multi-task constraints to jointly optimize hyperparameters across multiple local models. The framework introduces an evolution operator for geographic proximity differential (Geo-DE) to enable collaboration among spatially adjacent models and a geographic selection operator (Geo-SL) to promote hyperparameter sharing, improve resource utilization and accelerate convergence. Extensive experiments based on soil organic carbon stocks and PM2.5 concentration datasets demonstrated that GeoEvo enhanced accuracy and stability while maintaining computational efficiency. Subsequent visual analytics revealed that considering the diversity and spatial correlations within the hyperparameter space enhanced the optimization process and improved prediction accuracy.
 
 ## Potential Application Scenarios
 - **Hyperparameter Tuning for Multiple Spatially Localized Models**  
@@ -68,7 +68,7 @@ print(f'The best hyperparameter is\n {best_param}\n with objective value\n {best
 ## Citations
 If this software is useful for your research or application, please cite our paper:
 ```bash
-default
+Zhang, W., Cheng, S., & Lu, F. (2025). A geographic evolutionary framework with multi-task optimization of automatic hyperparameter tuning for spatially stratified machine learning models. International Journal of Geographical Information Science, 1–24. https://doi.org/10.1080/13658816.2025.2502769
 ```
 We also recommend our previous works below as basis models for GeoEvo:
 ```bash
