@@ -68,7 +68,7 @@ print(f'The best hyperparameter is\n {best_param}\n with objective value\n {best
 ## Citations
 If this software is useful for your research or application, please cite our paper:
 ```bash
-Zhang, W., Cheng, S., & Lu, F. (2025). A geographic evolutionary framework with multi-task optimization of automatic hyperparameter tuning for spatially stratified machine learning models. International Journal of Geographical Information Science, 1–24. https://doi.org/10.1080/13658816.2025.2502769
+Zhang, W., Cheng, S., & Lu, F. (2026). A geographic evolutionary framework with multi-task optimization of automatic hyperparameter tuning for spatially stratified machine learning models. International Journal of Geographical Information Science, 40(1), 25–48. https://doi.org/10.1080/13658816.2025.2502769
 ```
 We also recommend our previous works below as basis models for GeoEvo:
 ```bash
